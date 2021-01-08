@@ -18,7 +18,9 @@
       </div>
       <div class="no-results" v-else>no results...</div>
     </main>
+    <div class="tyler"> <a href="https://www.youtube.com/watch?v=ZZA-QrBBM3Y&t=12s">thanks to Tyler Potts</a></div>
   </div>
+  
 </template>
 
 <script>
@@ -116,6 +118,9 @@ main{
   display: flex;
   flex-wrap: wrap;
   margin: 0 -8px;
-
+}
+.tyler{
+  position: absolute;
+  bottom: 50px;
 }
 </style>
