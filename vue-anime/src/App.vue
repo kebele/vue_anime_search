@@ -13,9 +13,10 @@
       </form>
     </header>
     <main>
-      <div class="cards">
+      <div class="cards" v-if="animelist.length > 0">
         <Card v-for="anime in animelist" :key="anime.mal_id" :anime="anime"/>
       </div>
+      <div class="no-results" v-else>no results...</div>
     </main>
   </div>
 </template>
@@ -35,7 +36,8 @@ export default {
         .then(res => res.json())
         .then(data => data.results)
 
-        console.log(animelist.value);
+        // console.log(animelist.value);
+        search_query.value = ""
     }
 
 

@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <a href="#" target="_blank">
+        <a :href="anime.url" target="_blank">
             <img :src="anime.image_url" alt="poster">
         </a>
         <h3>{{anime.title}}</h3>
